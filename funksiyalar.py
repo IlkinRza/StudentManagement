@@ -72,7 +72,7 @@ def melumatlari_yenile():
             kohne_kod = int(input("Kodunuzu deyismek isteyirsinizse indiki kodunuzu daxil edin,yoxsa '0'-a basin: "))
             if (kohne_kod == i.kod):
                 yeni_kod = int(input("Yeni kodunuzu daxil edin: "))
-                if (yeni_kod > 99 and yeni_soyad <= 999):
+                if (yeni_kod > 99 and yeni_kod <= 999):
                     i.kod = yeni_kod
                     print(f"Kodunuzu müveffeqiyyetle deyisdiniz {i.ad} bəy")
                     print("_______________________________________________________")
